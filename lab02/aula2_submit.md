@@ -17,17 +17,51 @@ Considere um Sistema de Gestão de Stocks de uma empresa. O presente exercício 
 Identify the entities, attributes, and relationships of the database.
 
 ```
-... Write here your answer ...
+Entidades -> Produto, Item, Encomenda, Fornecedor, Condição de pagamento e Tipo de fornecedor
 
+Atributos Produto -> Código, Preço, Nome, Taxa de IVA, Quantidade
+Atributos Item -> Quantidade
+Atributos Encomenda -> Número, Data
+Atributos Fornecedor -> Nome, Morada, NIF, Email
+Atributos Condição de pagamento -> Prazo
+Atributos Tipo de Fornecedor -> Código, Designação
 
+Relações:
+Produto tem um Item
+Item tem uma Encomenda
+Encomenda tem um Fornecedor
+Fornecedor tem uma Condição de Pagamento
+Fornecedor tem um Tipo de Fornecedor
 ```
 
 #### *b)* Caracterize as relações quanto ao grau, cardinalidade e obrigatoriedade de participação das instâncias das entidades no relacionamento.
 Specify the relationships regarding the degree, cardinality and instances mandatory participation of the entities in the relationship.
 
 ```
-... Write here your answer ...
+Produto-Item:
+Relação binária
+Um Produto tem um Item. Um Item tem 1 ou mais Produtos
+Participação obrigatória de Item
 
+Item-Encomenda:
+Relação binária
+Um Item tem uma Encomenda. Uma Encomenda tem 1 ou mais Items
+Participação obrigatória de Item
+
+Encomenda-Fornecedor:
+Relação binária
+Uma Encomenda tem um Fornecedor. Um Fornecedor tem 1 ou mais Encomendas
+Participação obrigatória das duas entidades
+
+Fornecedor-Tipo de Fornecedor:
+Relação binária
+Um Fornecedor tem um Tipo de Fornecedor. Um tipo de Fornecedor tem 1 ou mais Fornecedores
+Participação obrigatória de Fornecedor
+
+Fornecedor-Condição Pagamento:
+Relação binária
+Um Fornecedor tem uma Condição de Pagamento. Uma Condição de Pagamento tem 1 ou mais Fornecedores
+Participação obrigatória de Fornecedor
 ```
 
 #### *c)* Desenvolva o desenho conceptual da base de dados com recurso a um diagrama entidade-relacionamento. Numa primeira fase, utilize lápis e papel para realizar o trabalho. Uma vez concluído o desenho em papel, transponha o diagrama para um formato eletrónico utilizando uma ferramenta gráfica como, por exemplo, o Microsoft Visio ou o Visual Paradigm.
