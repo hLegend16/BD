@@ -106,11 +106,11 @@ Chaves Estrangeiras:
 
 ### *a)* 2.1
 
-![ex_3_3_a!](ex_3_3a.jpg "AnImage")
+![ex_3_3_a!](ex_3_3a.png "AnImage")
 
 ### *b)* 2.2
 
-![ex_3_3_b!](ex_3_3b.jpg "AnImage")
+![ex_3_3_b!](ex_3_3b.png "AnImage")
 
 ### *c)* 2.3
 
